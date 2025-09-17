@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Science Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="heading">Science Quiz</h1>
+            <p>Test your scientific knowledge</p>
+        </div>
+
+        <div class="content">
+
+            <!--* Welcome Section  -->
+            <div id="welcome-section">
+                <div class="instructions">
+                    <h3>Instructions</h3>
+                    <p>• Answer one question at a time</p>
+                    <p>• You can skip questions, but you cannot return to them</p>
+                    <p>• Spelling must be exact - double-check your answers</p>
+                    <p>• Score 7 or higher out of 10 to pass</p>
+                </div>
+                
+                <button class="start-button" onclick="startQuiz()">Start Quiz</button>
+            </div>
+            
+            <!--* Quiz Section  -->
+            <div id="quiz-section" class="quiz-section">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+
+                <div class="question-card">
+                    <div class="question-number" id="questionNumber">Question 1 0f 10</div>
+                    <div class="question-text" id="questionText"></div>
+
+                    <input type="text" class="answer-input" id="answerInput" placeholder="Enter your answer here..." autocomplete="off" spellcheck="false">
+
+                    <div class="button-group" id="buttonGroup">
+                        <button class="btn btn-primary" onclick="submitAnswer()">Submit Answer</button>
+                        <button class="btn btn-secondary" onclick="skipQuestion()">Skip Question</button>
+                    </div>
+
+                    <div class="feedback" id="feedBack"></div>
+                </div>
+
+            </div>
+
+            <!--* Result Section  -->
+            <div class="result-section" id="result-section">
+                <div class="score-circle" id="scoreCircle">0%</div>
+                <div class="result-message" id="resultMessage"></div>
+                <div class="result-details" id="resultDetails"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
