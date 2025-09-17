@@ -108,4 +108,4 @@ This quiz covers fundamental scientific concepts suitable for:
 
 ## License
 
-This project is open source and available for educational use.
+This project is licensed under <a href="https://github.com/jericho066/interactive-science-quiz/blob/main/LICENSE">MIT</a> License.
