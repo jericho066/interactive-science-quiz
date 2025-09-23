@@ -20,6 +20,9 @@ An interactive quiz game featuring 10 science questions with immediate feedback,
 - **Visual feedback** with color-coded responses
 - **Score visualization** with circular progress indicator
 
+## Demo
+[Live Demo](https://jericho066.github.io/interactive-science-quiz/)
+
 ## Technology Stack
 
 - **HTML5** - Semantic structure and accessibility
